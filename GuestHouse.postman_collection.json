@@ -1,0 +1,771 @@
+{
+	"info": {
+		"_postman_id": "57103a92-bd2e-4b71-9e03-fd30787c2f35",
+		"name": "GuestHouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Staff",
+			"item": [
+				{
+					"name": "archieved",
+					"item": [
+						{
+							"name": "listguestrooms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/staff/listguestrooms"
+							},
+							"response": []
+						},
+						{
+							"name": "deleteguestrooms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/staff/deleteguestrooms?RoomName=G-006",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"staff",
+										"deleteguestrooms"
+									],
+									"query": [
+										{
+											"key": "RoomName",
+											"value": "G-006"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addguestrooms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/staff/addguestrooms?RoomName=G-005",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"staff",
+										"addguestrooms"
+									],
+									"query": [
+										{
+											"key": "RoomName",
+											"value": "G-005"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "listorganisers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/staff/listorganisers"
+					},
+					"response": []
+				},
+				{
+					"name": "addorganisers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/staff/addorganisers?Username=testuser3&Password=testpassword3&Category=Category3&Mobile=111222883&Email=mail3@test.com",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"staff",
+								"addorganisers"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "testuser3"
+								},
+								{
+									"key": "Password",
+									"value": "testpassword3"
+								},
+								{
+									"key": "Category",
+									"value": "Category3"
+								},
+								{
+									"key": "Mobile",
+									"value": "111222883"
+								},
+								{
+									"key": "Email",
+									"value": "mail3@test.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeorganisers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/staff/removeorganisers?Username=testuser3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"staff",
+								"removeorganisers"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "testuser3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/staff/listevents"
+					},
+					"response": []
+				},
+				{
+					"name": "permitevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/staff/permitevents?Name=Dell Internship&Username=TPCSc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"staff",
+								"permitevents"
+							],
+							"query": [
+								{
+									"key": "Name",
+									"value": "Dell Internship"
+								},
+								{
+									"key": "Username",
+									"value": "TPCSc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "liststudents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/staff/liststudents"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "checkorganisers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/checkorganisers?Username=Fats_Sc&Password=FatspassSc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"checkorganisers"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "Fats_Sc"
+								},
+								{
+									"key": "Password",
+									"value": "FatspassSc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/listevents"
+					},
+					"response": []
+				},
+				{
+					"name": "contactorganisers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/contactorganisers?Username=testuser1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"contactorganisers"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "testuser1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addstudents",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/addstudents?First_Name=Rajneesh&Last_Name=Kumar&Attending=PhotoGeeksSc>>Photo workshop$$TARS_Sc>>Cola Code Contest&Start_date=30&Start_month=3&Start_year=2021&End_date=4&End_month=4&End_year=2021&Femaleness=false&Mobile=9873366453&Email=RajKumar@gmail.com",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"addstudents"
+							],
+							"query": [
+								{
+									"key": "First_Name",
+									"value": "Rajneesh"
+								},
+								{
+									"key": "Last_Name",
+									"value": "Kumar"
+								},
+								{
+									"key": "Attending",
+									"value": "PhotoGeeksSc>>Photo workshop$$TARS_Sc>>Cola Code Contest"
+								},
+								{
+									"key": "Start_date",
+									"value": "30"
+								},
+								{
+									"key": "Start_month",
+									"value": "3"
+								},
+								{
+									"key": "Start_year",
+									"value": "2021"
+								},
+								{
+									"key": "End_date",
+									"value": "4"
+								},
+								{
+									"key": "End_month",
+									"value": "4"
+								},
+								{
+									"key": "End_year",
+									"value": "2021"
+								},
+								{
+									"key": "Femaleness",
+									"value": "false"
+								},
+								{
+									"key": "Mobile",
+									"value": "9873366453"
+								},
+								{
+									"key": "Email",
+									"value": "RajKumar@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkstaffs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/checkstaffs?Username=Warden_chief&Password=testpaschief",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"checkstaffs"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "Warden_chief"
+								},
+								{
+									"key": "Password",
+									"value": "testpaschief"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organiser",
+			"item": [
+				{
+					"name": "addevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/addevents?Name=Photo workshop&Username=PhotoGeeksSc&Start_date=1&Start_month=4&Start_year=2021&End_date=3&End_month=4&End_year=2021&Students_acc_male=30&Students_acc_female=30&Guest_acc=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"addevents"
+							],
+							"query": [
+								{
+									"key": "Name",
+									"value": "Photo workshop"
+								},
+								{
+									"key": "Username",
+									"value": "PhotoGeeksSc"
+								},
+								{
+									"key": "Start_date",
+									"value": "1"
+								},
+								{
+									"key": "Start_month",
+									"value": "4"
+								},
+								{
+									"key": "Start_year",
+									"value": "2021"
+								},
+								{
+									"key": "End_date",
+									"value": "3"
+								},
+								{
+									"key": "End_month",
+									"value": "4"
+								},
+								{
+									"key": "End_year",
+									"value": "2021"
+								},
+								{
+									"key": "Students_acc_male",
+									"value": "30"
+								},
+								{
+									"key": "Students_acc_female",
+									"value": "30"
+								},
+								{
+									"key": "Guest_acc",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/listevents?Username=PhotoGeeksSc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"listevents"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "PhotoGeeksSc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/removeevents?Name=testevent00&Username=testuser0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"removeevents"
+							],
+							"query": [
+								{
+									"key": "Name",
+									"value": "testevent00"
+								},
+								{
+									"key": "Username",
+									"value": "testuser0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/editevents?Name=testevent01&Username=testuser0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"editevents"
+							],
+							"query": [
+								{
+									"key": "Name",
+									"value": "testevent01"
+								},
+								{
+									"key": "Username",
+									"value": "testuser0"
+								},
+								{
+									"key": "Start_date",
+									"value": "8",
+									"disabled": true
+								},
+								{
+									"key": "Start_month",
+									"value": "6",
+									"disabled": true
+								},
+								{
+									"key": "Start_year",
+									"value": "2021",
+									"disabled": true
+								},
+								{
+									"key": "End_date",
+									"value": "9",
+									"disabled": true
+								},
+								{
+									"key": "End_month",
+									"value": "6",
+									"disabled": true
+								},
+								{
+									"key": "End_year",
+									"value": "2021",
+									"disabled": true
+								},
+								{
+									"key": "Students_acc_male",
+									"value": "25",
+									"disabled": true
+								},
+								{
+									"key": "Students_acc_female",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "Guest_acc",
+									"value": "8",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addguests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/addguests?First_Name=Priya&Last_Name=Sharma&Name=Photo workshop&Username=PhotoGeeksSc&Femaleness=true&Mobile=9275709834&Email=PriSha@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"addguests"
+							],
+							"query": [
+								{
+									"key": "First_Name",
+									"value": "Priya"
+								},
+								{
+									"key": "Last_Name",
+									"value": "Sharma"
+								},
+								{
+									"key": "Name",
+									"value": "Photo workshop"
+								},
+								{
+									"key": "Username",
+									"value": "PhotoGeeksSc"
+								},
+								{
+									"key": "Femaleness",
+									"value": "true"
+								},
+								{
+									"key": "Mobile",
+									"value": "9275709834"
+								},
+								{
+									"key": "Email",
+									"value": "PriSha@yahoo.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listguests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/listguests?Username=PhotoGeeksSc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"listguests"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "PhotoGeeksSc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeguests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/removeguests?First_Name=guest000&Last_Name=000guest&Name=testevent00&Username=testuser0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"removeguests"
+							],
+							"query": [
+								{
+									"key": "First_Name",
+									"value": "guest000"
+								},
+								{
+									"key": "Last_Name",
+									"value": "000guest"
+								},
+								{
+									"key": "Name",
+									"value": "testevent00"
+								},
+								{
+									"key": "Username",
+									"value": "testuser0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "liststudents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/organiser/liststudents?Username=TARS_Sc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"organiser",
+								"liststudents"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "TARS_Sc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
