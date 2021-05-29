@@ -1,6 +1,6 @@
 # GuestHouse-api
 
-This is a self build api for a GuestHouse Project
+This is a self build api for a GuestHouse Project.
 GuestHouse Folder contains Django Project Folder. 
 The methods for using api have also been uploaded by Postman exported file
 
